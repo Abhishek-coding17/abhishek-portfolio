@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <a class="nav-link" href="#Doctype">Doctype</a>
+        <a class="nav-link" href="#HTML_Structure">HTML Structure</a>
+        <a class="nav-link" href="#Headings_and_Text">Headings and Text</a>
+        <a class="nav-link" href="#Lists">Lists</a>
+        <a class="nav-link" href="#Links_and_Images">Links and Images</a>
+        <a class="nav-link" href="#Forms">Forms</a>
+        <a class="nav-link" href="#Tables">Tables</a>
+        <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
+        <a class="nav-link" href="#Media_Queries">Media Queries</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+        
+        <section class="main-section" id="Doctype">
+            <header>Doctype</header>
+            <p>The `DOCTYPE` declaration defines the document type and version of HTML.</p>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <p>It should always be the first line in an HTML document.</p>
+        </section>
+
+        <section class="main-section" id="HTML_Structure">
+            <header>HTML Structure</header>
+            <p>A basic HTML document structure:</p>
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Hello, World!&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </section>
+
+        <section class="main-section" id="Headings_and_Text">
+            <header>Headings and Text</header>
+            <p>HTML has six levels of headings:</p>
+            <code>
+                &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                &lt;h4&gt;Heading 4&lt;/h4&gt;<br>
+                &lt;h5&gt;Heading 5&lt;/h5&gt;<br>
+                &lt;h6&gt;Heading 6&lt;/h6&gt;
+            </code>
+            <p>Paragraphs are written using the `<p>` tag.</p>
+        </section>
+
+        <section class="main-section" id="Lists">
+            <header>Lists</header>
+            <p>HTML supports ordered and unordered lists:</p>
+            
+            <p><strong>Unordered List:</strong></p>
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+                <li>Item D</li>
+                <li>Item E</li>
+            </ul>
+
+            <p><strong>Ordered List:</strong></p>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="Links_and_Images">
+            <header>Links and Images</header>
+            <p>To add a hyperlink:</p>
+            <code>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</code>
+            <p>To display an image:</p>
+            <code>&lt;img src="image.jpg" alt="Description"&gt;</code>
+        </section>
+
+        <section class="main-section" id="Forms">
+            <header>Forms</header>
+            <p>Forms allow users to enter data:</p>
+            <code>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;input type="text" placeholder="Enter name"&gt;<br>
+                &nbsp;&nbsp;&lt;button&gt;Submit&lt;/button&gt;<br>
+                &lt;/form&gt;
+            </code>
+        </section>
+
+        <section class="main-section" id="Tables">
+            <header>Tables</header>
+            <p>HTML tables organize data into rows and columns:</p>
+            <code>
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </code>
+        </section>
+
+        <section class="main-section" id="Semantic_HTML">
+            <header>Semantic HTML</header>
+            <p>Semantic HTML makes content more meaningful:</p>
+            <ul>
+                <li>&lt;header&gt; - Defines the page header</li>
+                <li>&lt;nav&gt; - Navigation links</li>
+                <li>&lt;article&gt; - Self-contained content</li>
+                <li>&lt;section&gt; - Thematic content grouping</li>
+                <li>&lt;footer&gt; - Defines a footer</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Media_Queries">
+            <header>Media Queries</header>
+            <p>Media queries make websites responsive:</p>
+            <code>
+                @media (max-width: 600px) {<br>
+                &nbsp;&nbsp;body { background-color: lightgray; }<br>
+                }
+            </code>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+

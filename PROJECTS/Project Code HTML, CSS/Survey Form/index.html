@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div id="main-container">
+        <header id="header">
+            <h1 id="title">Business Survey Form</h1>
+            <p id="description">Help us improve our business by answering this short survey.</p>
+        </header>
+        <hr>
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name: <input type="text" id="name" placeholder="Enter your full name" required>
+            </label>
+            <label for="email" id="email-label">
+                Email: <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">
+                Age: <input type="number" id="number" placeholder="Enter your age" max="18" min="99" required>
+            </label>
+            <label for="dropdown" id="dropdown-label">
+                Which option best describes your current role?
+                <select id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="business-owner">Business Owner</option>
+                    <option value="manager">Manager</option>
+                    <option value="employee">Employee</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="radio" id="radio-label">
+                How satisfied are you with our services?
+                <div>
+                    <input type="radio" name="experience" value="very-satisfied" id="radio" required> Very Satisfied
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="satisfied" id="radio" required> Satisfied
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="neutral" id="radio" required> Neutral
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="dissatisfied" id="radio" required> Dissatisfied
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="very-dissatisfied" id="radio" required> Very
+                    Dissatisfied
+                </div>
+            </label>
+            <label for="textarea" id="textarea-label">
+                Give us your feedback
+                <textarea id="textarea" placeholder="Enter your comments here..."></textarea>
+            </label>
+            <label for="checkbox" id="checkbox-label">
+                <input type="checkbox" name="agree" value="agree" id="checkbox" required> I agree to the terms and
+                conditions
+                <input type="checkbox" name="privacy-policy" value="privacy-policy" id="checkbox"> I accept the Privacy
+                Policy
+                <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+

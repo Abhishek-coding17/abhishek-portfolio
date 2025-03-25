@@ -1,0 +1,132 @@
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+#navbar {
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #444;
+    padding-left: 15px;
+}
+
+/* Main Content Styles */
+#main-doc {
+    margin-left: 280px;
+    padding: 30px;
+    max-width: 900px;
+}
+
+/* Section Styles */
+.main-section {
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-section header {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+/* Code Block Styling */
+code {
+    display: block;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+/* List Styling */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    #navbar {
+        width: 220px;
+    }
+    #main-doc {
+        margin-left: 240px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 15px;
+    }
+}

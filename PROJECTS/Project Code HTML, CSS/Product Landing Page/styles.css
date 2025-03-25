@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #ddd;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #header-img {
+    width: 50px;
+    height: auto;
+  }
+  
+  #nav-bar {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: url("https://cdn.pixabay.com/photo/2018/02/08/10/22/desk-3139127_1280.jpg") center/cover;
+    -webkit-text-stroke: 1px black;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px;
+  }
+  
+  .cta-button {
+    font-size: 20px;
+    background: #ffcc00;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #about img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  /* Video Section */
+  #video-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Features Section */
+  #features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #f8f8f8;
+  }
+  
+  .feature {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .feature img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #form input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+  }
+  
+  #submit {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    background: #ddd;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #nav-bar {
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 10px;
+    }
+  
+    #features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #hero {
+      padding: 80px 20px;
+    }
+  
+    #about img {
+      max-width: 100%;
+    }
+  }
+  

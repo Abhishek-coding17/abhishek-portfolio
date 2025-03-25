@@ -1,0 +1,123 @@
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }
+  /* Global Styles */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+  }
+  
+  body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+  }
+  
+  /* Main Title */
+  h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004080;
+      margin-bottom: 20px;
+  }
+  
+  /* Section Headings */
+  h2 {
+      font-size: 2rem;
+      color: #00509e;
+      margin-top: 30px;
+      border-bottom: 2px solid #00509e;
+      padding-bottom: 5px;
+  }
+  
+  /* Content Divs */
+  div, li {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  div:hover {
+      transform: translateY(-5px);
+      background: #eaf2ff;
+  }
+  
+  /* Links */
+  a {
+      color: #d35400;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+  }
+  
+  a:hover {
+      color: #e67e22;
+  }
+  
+  /* Table Styling */
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+  }
+  
+  th {
+      background: #00509e;
+      color: white;
+      text-transform: uppercase;
+  }
+  
+  td {
+      background: #f9f9f9;
+  }
+  
+  /* Image Styling */
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* List Styling */
+  ul {
+      list-style-type: none;
+      margin: 10px 0;
+      padding-left: 20px;
+  }
+  
+  ul li {
+      margin: 5px 0;
+  }
+  
+  /* Footer */
+  footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background: #004080;
+      color: white;
+      border-radius: 5px;
+  }

@@ -1,0 +1,266 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Review & Platform Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="https://files.oaiusercontent.com/file-8omKyJ5YgFqztAH3m55AX4?se=2025-03-24T16%3A20%3A06Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D0983b63a-faf2-46e9-a362-05c85519dc3c.webp&sig=dXBOT7Gg1NvocrUanJv/yug0qS7gwV8GIEX%2BDrVIF%2Bk%3D" alt="Company Logo">
+      <h1>Our Company</h1>
+    </div>
+    <nav id="nav-bar">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#video-section" class="nav-link">Review</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Innovate. Scale. Succeed.</h2>
+    <p>Powerful business solutions to transform your workflow.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg" alt="Business Team">
+    <p>We help businesses streamline operations with cutting-edge technology and expert support.</p>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video-section">
+    <h2>Company Review & Platform Demo</h2>
+   <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ZK-rNEhJIDs?si=kmE01Z_l3WuWxTZG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="feature">
+      <img src="https://cdn.pixabay.com/photo/2022/04/04/16/42/technology-7111804_1280.jpg" alt="Feature 1">
+      <h3>Advanced Technology</h3>
+      <p>Our platform uses the latest AI to enhance productivity.</p>
+    </div>
+    <div class="feature">
+      <img src="https://cdn.pixabay.com/photo/2016/10/25/16/09/analytics-1769273_1280.png" alt="Feature 2">
+      <h3>Data-Driven Insights</h3>
+      <p>Leverage real-time analytics for smarter decisions.</p>
+    </div>
+    <div class="feature">
+      <img src="https://cdn.pixabay.com/photo/2016/06/16/02/33/customer-service-1460518_1280.png" alt="Feature 3">
+      <h3>24/7 Customer Support</h3>
+      <p>We’re here to help you anytime, anywhere.</p>
+    </div>
+  </section>
+
+  <!-- Contact / Form Section -->
+  <section id="contact">
+    <h2>Subscribe for Updates</h2>
+    <p>Get the latest news and exclusive offers.</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" placeholder="Enter Your Email Here" type="email" name="email" required>
+      <input id="submit" type="submit" value="Subscribe">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Privacy | Terms | Contact</p>
+    <p>© 2024 Our Company. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#header-img {
+  width: 50px;
+  height: auto;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Hero Section */
+#hero {
+  background: url("https://cdn.pixabay.com/photo/2018/02/08/10/22/desk-3139127_1280.jpg") center/cover;
+  -webkit-text-stroke: 1px black;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+.cta-button {
+  font-size: 20px;
+  background: #ffcc00;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#about img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+/* Video Section */
+#video-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Features Section */
+#features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background: #f8f8f8;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#form input {
+  padding: 10px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+#submit {
+  background: #ffcc00;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #ddd;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  #features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #hero {
+    padding: 80px 20px;
+  }
+
+  #about img {
+    max-width: 100%;
+  }
+}
+
+
+** end of undefined **
+

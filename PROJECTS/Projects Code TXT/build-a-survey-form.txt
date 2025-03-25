@@ -1,0 +1,309 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div id="main-container">
+        <header id="header">
+            <h1 id="title">Business Survey Form</h1>
+            <p id="description">Help us improve our business by answering this short survey.</p>
+        </header>
+        <hr>
+        <form id="survey-form">
+            <label for="name" id="name-label">
+                Name: <input type="text" id="name" placeholder="Enter your full name" required>
+            </label>
+            <label for="email" id="email-label">
+                Email: <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">
+                Age: <input type="number" id="number" placeholder="Enter your age" max="18" min="99" required>
+            </label>
+            <label for="dropdown" id="dropdown-label">
+                Which option best describes your current role?
+                <select id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="business-owner">Business Owner</option>
+                    <option value="manager">Manager</option>
+                    <option value="employee">Employee</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="radio" id="radio-label">
+                How satisfied are you with our services?
+                <div>
+                    <input type="radio" name="experience" value="very-satisfied" id="radio" required> Very Satisfied
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="satisfied" id="radio" required> Satisfied
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="neutral" id="radio" required> Neutral
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="dissatisfied" id="radio" required> Dissatisfied
+                </div>
+                <div>
+                    <input type="radio" name="experience" value="very-dissatisfied" id="radio" required> Very
+                    Dissatisfied
+                </div>
+            </label>
+            <label for="textarea" id="textarea-label">
+                Give us your feedback
+                <textarea id="textarea" placeholder="Enter your comments here..."></textarea>
+            </label>
+            <label for="checkbox" id="checkbox-label">
+                <input type="checkbox" name="agree" value="agree" id="checkbox" required> I agree to the terms and
+                conditions
+                <input type="checkbox" name="privacy-policy" value="privacy-policy" id="checkbox"> I accept the Privacy
+                Policy
+                <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main Container */
+#main-container {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 1px 8px rgba(0, 0, 0, 0.05);
+  padding: 35px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Header Section */
+#header {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 18px 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ff6f61 0%, #ff9a8b 100%);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+#title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#description {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+select:hover,
+textarea:hover {
+  border-color: #bbb;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 6px rgba(255, 111, 97, 0.6);
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px;
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #ff6f61;
+}
+
+button[type="submit"] {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e55b50;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(229, 91, 80, 0.3);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(229, 91, 80, 0.2);
+}
+
+/* Checkbox and Radio Group */
+#radio-label div,
+#checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#checkbox-label {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #main-container {
+    padding: 25px;
+  }
+
+  #header {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  #title {
+    font-size: 24px;
+  }
+
+  #description {
+    font-size: 14px;
+  }
+
+  form {
+    gap: 12px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #header {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  #title {
+    font-size: 20px;
+  }
+
+  #description {
+    font-size: 13px;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+
+** end of undefined **
+
